@@ -1653,6 +1653,16 @@ display: inline-block;
 
 }
 
+@media(max-width:420px){
+    .section__title{
+        margin-top: var(--mb-10);   
+       }
+
+       :root{
+        --big-font: 2.8rem;
+       }
+}
+
 @media(max-width:375px){
 
  :root{
