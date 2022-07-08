@@ -1,0 +1,976 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="icon" type="image/x-icon" href="favicon.png">
+      <!----------boostrap css-------->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+      <!------icon cdn---->
+      <link href="https://unpkg.com/ionicons@4.5.10-0/dist/css/ionicons.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+      <link rel="stylesheet" href="assets/css/fontAwesome5Pro.css">
+      <!----------custom css-------->
+      <link rel="stylesheet" href="assets/css/style.css">
+      <!-------goole fonts-->
+      <link href="https://fonts.googleapis.com/css2?family=Arima:wght@100;200;300;400;500;600;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">
+      <!-----------------animation-->
+      <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+      <!---------swiperjs---------------->
+      <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+      <title>www.etech.in</title>
+   </head>
+   <body>
+
+         <!-- back to top start -->
+         <div class="progress-wrap">
+            <svg class="progress-circle svg-content" width="100%" height="100%" viewBox="-1 -1 102 102">
+               <path d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98" />
+            </svg>
+         </div>
+      
+      <!----------------------navbar-------->
+      <header class="header">
+         <nav class="NavBar ">
+            <div class="nav_container">
+               <div class="logo"><a href="index.html"><span class="icon">E</span> E-Tech</a></div>
+               <ul class="menu_list">
+                  <li><a href="#hero">Home</a></li>
+                  <li><a href="#services">Servies</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#crouse">Crouse</a></li>
+                  <li><a href="#instractor">Instractor</a></li>
+                  <li><a href="#FAQ">FAQ</a></li>
+                  <li><a href="#contact">Contact</a></li>
+               </ul>
+               <div class="btn_grp">
+                  <a href="" class="btn_3  mx-2">Sing In</a>
+                  <a href="" class="btn_2" data-bs-toggle="modal" data-bs-target="#exampleModal">Resgister</a>
+               </div>
+               <div class="hamburger-menu" id="hamburger-menu">
+                  <div class="menu-bar1"></div>
+                  <div class="menu-bar2"></div>
+                  <div class="menu-bar3"></div>
+               </div>
+            </div>
+         </nav>
+      </header>
+ <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+   <div class="modal-dialog">
+     <div class="modal-content">
+       <div class="modal-header">
+         <h5 class="modal-title" id="exampleModalLabel">Registration</h5>
+         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+       </div>
+       <div class="modal-body">
+         <form action="" method="post" class="regisform">
+            <div class="form-floating mb-3">
+               <input type="text" class="form-control" id="floatingInput" placeholder="name@example.com">
+               <label for="floatingInput">Your Name</label>
+             </div>
+            <div class="form-floating mb-3">
+               <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
+               <label for="floatingInput">Email address</label>
+             </div>
+             <div class="form-floating mb-3">
+               <input type="number" class="form-control" id="floatingInput" placeholder="name@example.com">
+               <label for="floatingInput">Contact No</label>
+             </div>
+             <div class="form-floating">
+               <textarea class="form-control" placeholder="Leave a comment here" id="floatingTextarea2" style="height: 100px"></textarea>
+               <label for="floatingTextarea2">Your Interrest</label>
+             </div>
+         </form>
+       </div>
+       <div class="submit text-center">
+         <a href="" class="submit_btn">Register</a>
+       </div>
+     </div>
+   </div>
+ </div>
+      <!----------------------hero-->
+      <section class="hero_wrapper  d-flex align-items-center" id="hero">
+         <div class="hero">
+            <div class="container m-10">
+               <div class="row align-items-center">
+                  <div class="col-lg-6 col-md-12 order-2 order-lg-1" data-aos="zoom-in">
+                     <div class="hero_content">
+                        <h1>We Take Learning to New Heights</h1>
+                        <h3>Unlimited access to all 60+ instructors.</h3>
+                        <p>We believe everyone has the capacity to be creative. Turitor is a place where people develop their own potential.</p>
+                     </div>
+                    <!---------------------search box-->
+                     <form action="" enctype="multipart/form-data" method="post" class="form">
+                        <div class="hero_input_sr_box">
+                        <input type="search" name="s" class="form-control sr_input" id="" placeholder="What Do You Want to learn?">
+                        <button type="submit"><ion-icon name="search"></ion-icon></button>
+                     </div>
+                     <p>You`re guaranteed to find something that`s right for you.</p>
+                     </form>                    
+                  </div>
+                  <div class="col-lg-6 col-md-8 order-1 order-lg-2 mx-auto">
+                     <div class="hero_img_container">
+                        <div class="banner_img">
+                           <img src="assets/images/girl.png" alt="banner" class="img-fluid ban_img"data-aos="zoom-in-up">
+                           <div class="shapes">
+                              <div class="shape1"><img src="assets/images/shape1.png" alt=""></div>
+                              <div class="shape2"><img src="assets/images/shape4.png" alt=""></div>
+                              <div class="shape3"><img src="assets/images/shape3.png" alt=""></div>
+                           </div>
+                           <div class="hero_promotion"data-aos="fade-up"data-aos-delay="50">
+                              <div class="hero__promotion-icon inspiration mr-10"><ion-icon name="navigate"></ion-icon></div>
+                            <div class="hero_promotion_text">
+                              <h5> Congrstulations</h5>
+                              <p>Your admission completed</p>
+                            </div>
+                           </div>
+                           <div class="hero_promotion_2" >
+                              <div class="hero__promotion-icon inspiration mr-10"><ion-icon name="heart"></ion-icon></div>
+                            <div class="hero_promotion_text">
+                              <h5>Get<strong>20%</strong>on<br>Every crouse</h5>
+                            </div>
+                           </div>
+                           <div class="hero_promotion_3" data-aos="fade-up"data-aos-delay="40">
+                              <div class="hero__promotion-icon inspiration mr-10"><ion-icon name="people"></ion-icon></div>
+                            <div class="hero_promotion_text">
+                              <h4> 9.2k</h4>
+                              <p>Total active student</p>
+                            </div>
+                           </div>
+                        </div>
+                        
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         </div>
+      </section>
+
+      <!-----------------features------------------->
+
+      <section class="services" id="services">
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-6 col-md-12 d-flex align-items-center" data-aos="fade-up">
+                  <div class="section__title">
+                     <h2>Our Servies<span><img src="assets/images/yellow-bg-2.png" alt="" class="img-fluid"></span></span></h2>
+                     <h4>We Added Value To Our Students Journey</h4>
+                     <p>but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                  </div>
+               </div>
+               <div class="col-lg-6 col-md-12">
+                  <div class="row ser_row">
+                     <div class="col-md-6"data-aos="fade-up">
+                        <div class="single_ser">
+                           <div class="ser_icon" id="icon1">
+                              <ion-icon name="laptop"></ion-icon>
+                           </div>
+                           <div class="ser_coontent">
+                              <h2>Online Class</h2>
+                              <p>There are many variations of passages of Lorem Ipsum available</p>
+                          
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6"data-aos="fade-up"data-aos-duration="4000">
+                        <div class="single_ser">
+                           <div class="ser_icon" id="icon2">
+                              <ion-icon name="cube"></ion-icon>
+                           </div>
+                           <div class="ser_coontent">
+                              <h2>Easy Registration</h2>
+                              <p>There are many variations of passages of Lorem Ipsum available</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6"data-aos="fade-up"data-aos-duration="4000">
+                        <div class="single_ser">
+                           <div class="ser_icon" id="icon3">
+                              <ion-icon name="contacts"></ion-icon>
+                           </div>
+                           <div class="ser_coontent">
+                              <h2>Expert Trainer</h2>
+                              <p>There are many variations of passages of Lorem Ipsum available</p>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-md-6"data-aos="fade-up"data-aos-duration="4000">
+                        <div class="single_ser">
+                           <div class="ser_icon" id="icon4">
+                              <ion-icon name="clipboard"></ion-icon>
+                           </div>
+                           <div class="ser_coontent">
+                              <h2>Easy To Learn</h2>
+                              <p>There are many variations of passages of Lorem Ipsum available</p>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+
+      <!----------------about------------->
+
+      <section class="about" id="about">
+         <div class="container ab_container">
+            <div class="row">
+               <div class="col-lg-6 col-md-12 mx-auto">
+                 <div class="about_img"data-aos="fade-up">
+                  <img src="assets/images/about.jpg" alt="" class="img-fluid">
+                 </div>
+               </div>
+               <div class="col-lg-6 col-md-12 mx-auto">
+                  <div class="about_container" data-aos="fade-down">
+                     <div class="about_left">
+                        <div class="section__title">
+                           <h2>About</h2>
+                                 <h4>We Added Value To Our <span>Students</span> Journey</h4>
+                                 <p>but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable</p>
+                                 <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia,</p>
+                              <a href="" class="submit_btn mt-5">Contact</a>
+                        </div>
+                     </div>
+                    </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!------------------------------course section------------>
+
+      <section class="crouse common_sec_title" id="crouse">
+         <div class="section__title text-center">
+            <h2>Our Crouse<span><img src="assets/images/yellow-bg-2.png" alt="" class="img-fluid"></span></span></h2>
+            <h4>We Added Value To Our Students Journey</h4>
+            
+         </div>
+         <div class="container">
+                       <!-- Swiper -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+         <div class="single_crouse">
+            <div class="inner">
+               <div class="thumbnail">
+                  <img src="assets/images/crouse/course-01.jpg" alt="">
+                  <div class="wish"><ion-icon name="heart"></ion-icon></div>
+                  <div class="crouse_name">Language Learning</div>
+               </div>
+               <div class="content">
+                  <div class="card_top">
+                     <div class="author-meta">
+                        <div class="author-thumb">
+                            <a href="#">
+                                <img src="assets/images/instractor/instructor-1.jpg" alt="Author Images">
+                                <span class="author-title">Nancy Phipps</span>
+                            </a>
+                        </div>
+                    </div>
+                    <ul class="edu-meta meta-02">
+                     <li><ion-icon name="clipboard"></ion-icon><span>16 Lessons</span></li>
+                 </ul>
+                  </div>
+                  <h5 class="card_title"><a href="#">Java Programming Masterclass for Software Developers</a></h5>
+                  <hr class="hr">
+                  <div class="card-bottom">
+                     <div class="price-list price-style-02">
+                         <div class="price current-price">$89.99</div>
+                         <div class="price old-price">$99.99</div>
+                     </div>
+                     <div class="edu-rating rating-default">
+                         <div class="rating">
+                           <ion-icon name="star"></ion-icon>
+                           <ion-icon name="star"></ion-icon>
+                           <ion-icon name="star"></ion-icon>
+                           <ion-icon name="star"></ion-icon>
+                         </div>
+                         <span class="rating-count">(12)</span>
+                     </div>
+                 </div>
+               </div>
+               </div>
+               <div class="content_hover_action">
+                  <div class="hover_content">
+                     <div class="content_top">
+                        <div class="wish"><ion-icon name="heart"></ion-icon></div>
+                        <div class="crouse_name_2">Language Learning</div>
+                     </div>
+                     <h6 class="card_hover_title"><a href="#">Java Programming Masterclass for Software Developers</a></h6>
+                     <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat</p>
+                     <a href="" class="btn_2 mt-3">Enroll Now</a>
+                     <div class="card-bottom mt-3">
+                        <div class="price-list price-style-02">
+                            <div class="price current-price">$89.99</div>
+                            <div class="price old-price">$99.99</div>
+                        </div>
+                        <div class="edu-rating rating-default">
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                            <span class="rating-count">(12)</span>
+                        </div>
+                    </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         
+         <!--------------2nd----->
+         <div class="swiper-slide">
+            <div class="single_crouse">
+               <div class="inner">
+                  <div class="thumbnail">
+                     <img src="assets/images/crouse/course-02.jpg" alt="">
+                     <div class="wish"><ion-icon name="heart"></ion-icon></div>
+                     <div class="crouse_name">Language Learning</div>
+                  </div>
+                  <div class="content">
+                     <div class="card_top">
+                        <div class="author-meta">
+                           <div class="author-thumb">
+                               <a href="#">
+                                   <img src="assets/images/instractor/instructor-2.jpg" alt="Author Images">
+                                   <span class="author-title">Nancy Phipps</span>
+                               </a>
+                           </div>
+                       </div>
+                       <ul class="edu-meta meta-02">
+                        <li><ion-icon name="clipboard"></ion-icon><span>16 Lessons</span></li>
+                    </ul>
+                     </div>
+                     <h5 class="card_title"><a href="#">Java Programming Masterclass for Software Developers</a></h5>
+                     <hr class="hr">
+                     <div class="card-bottom">
+                        <div class="price-list price-style-02">
+                            <div class="price current-price">$89.99</div>
+                            <div class="price old-price">$99.99</div>
+                        </div>
+                        <div class="edu-rating rating-default">
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                            <span class="rating-count">(12)</span>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="content_hover_action">
+                     <div class="hover_content">
+                        <div class="content_top">
+                           <div class="wish"><ion-icon name="heart"></ion-icon></div>
+                           <div class="crouse_name_2">Language Learning</div>
+                        </div>
+                        <h6 class="card_hover_title"><a href="#">Java Programming Masterclass for Software Developers</a></h6>
+                        <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat</p>
+                        <a href="" class="btn_2 mt-3">Enroll Now</a>
+                        <div class="card-bottom mt-3">
+                           <div class="price-list price-style-02">
+                               <div class="price current-price">$89.99</div>
+                               <div class="price old-price">$99.99</div>
+                           </div>
+                           <div class="edu-rating rating-default">
+                               <div class="rating">
+                                 <ion-icon name="star"></ion-icon>
+                                 <ion-icon name="star"></ion-icon>
+                                 <ion-icon name="star"></ion-icon>
+                                 <ion-icon name="star"></ion-icon>
+                               </div>
+                               <span class="rating-count">(12)</span>
+                           </div>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+                 <!--------------3rd----->
+         <div class="swiper-slide">
+            <div class="single_crouse">
+               <div class="inner">
+                  <div class="thumbnail">
+                     <img src="assets/images/crouse/course-03.jpg" alt="">
+                     <div class="wish"><ion-icon name="heart"></ion-icon></div>
+                     <div class="crouse_name">Designing Learning</div>
+                  </div>
+                  <div class="content">
+                     <div class="card_top">
+                        <div class="author-meta">
+                           <div class="author-thumb">
+                               <a href="#">
+                                   <img src="assets/images/instractor/instructor-6.jpg" alt="Author Images">
+                                   <span class="author-title">Nancy Phipps</span>
+                               </a>
+                           </div>
+                       </div>
+                       <ul class="edu-meta meta-02">
+                        <li><ion-icon name="clipboard"></ion-icon><span>16 Lessons</span></li>
+                    </ul>
+                     </div>
+                     <h5 class="card_title"><a href="#">Java Programming Masterclass for Software Developers</a></h5>
+                     <hr class="hr">
+                     <div class="card-bottom">
+                        <div class="price-list price-style-02">
+                            <div class="price current-price">$89.99</div>
+                            <div class="price old-price">$99.99</div>
+                        </div>
+                        <div class="edu-rating rating-default">
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                            <span class="rating-count">(12)</span>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="content_hover_action">
+                     <div class="hover_content">
+                        <div class="content_top">
+                           <div class="wish"><ion-icon name="heart"></ion-icon></div>
+                           <div class="crouse_name_2">Language Learning</div>
+                        </div>
+                        <h6 class="card_hover_title"><a href="#">Java Programming Masterclass for Software Developers</a></h6>
+                        <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat</p>
+                        <a href="" class="btn_2 mt-3">Enroll Now</a>
+                        <div class="card-bottom mt-3">
+                           <div class="price-list price-style-02">
+                               <div class="price current-price">$89.99</div>
+                               <div class="price old-price">$99.99</div>
+                           </div>
+                           <div class="edu-rating rating-default">
+                               <div class="rating">
+                                 <ion-icon name="star"></ion-icon>
+                                 <ion-icon name="star"></ion-icon>
+                                 <ion-icon name="star"></ion-icon>
+                                 <ion-icon name="star"></ion-icon>
+                               </div>
+                               <span class="rating-count">(12)</span>
+                           </div>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+                    <!--------------4th----->
+         <div class="swiper-slide">
+            <div class="single_crouse">
+               <div class="inner">
+                  <div class="thumbnail">
+                     <img src="assets/images/crouse/course-03.jpg" alt="">
+                     <div class="wish"><ion-icon name="heart"></ion-icon></div>
+                     <div class="crouse_name">Designing Learning</div>
+                  </div>
+                  <div class="content">
+                     <div class="card_top">
+                        <div class="author-meta">
+                           <div class="author-thumb">
+                               <a href="#">
+                                   <img src="assets/images/instractor/instructor-1.jpg" alt="Author Images">
+                                   <span class="author-title">Nancy Phipps</span>
+                               </a>
+                           </div>
+                       </div>
+                       <ul class="edu-meta meta-02">
+                        <li><ion-icon name="clipboard"></ion-icon><span>16 Lessons</span></li>
+                    </ul>
+                     </div>
+                     <h5 class="card_title"><a href="#">Java Programming Masterclass for Software Developers</a></h5>
+                     <hr class="hr">
+                     <div class="card-bottom">
+                        <div class="price-list price-style-02">
+                            <div class="price current-price">$89.99</div>
+                            <div class="price old-price">$99.99</div>
+                        </div>
+                        <div class="edu-rating rating-default">
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                            <span class="rating-count">(12)</span>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="content_hover_action">
+                     <div class="hover_content">
+                        <div class="content_top">
+                           <div class="wish"><ion-icon name="heart"></ion-icon></div>
+                           <div class="crouse_name_2">Language Learning</div>
+                        </div>
+                        <h6 class="card_hover_title"><a href="#">Java Programming Masterclass for Software Developers</a></h6>
+                        <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat</p>
+                        <a href="" class="btn_2 mt-3">Enroll Now</a>
+                        <div class="card-bottom mt-3">
+                           <div class="price-list price-style-02">
+                               <div class="price current-price">$89.99</div>
+                               <div class="price old-price">$99.99</div>
+                           </div>
+                           <div class="edu-rating rating-default">
+                               <div class="rating">
+                                 <ion-icon name="star"></ion-icon>
+                                 <ion-icon name="star"></ion-icon>
+                                 <ion-icon name="star"></ion-icon>
+                                 <ion-icon name="star"></ion-icon>
+                               </div>
+                               <span class="rating-count">(12)</span>
+                           </div>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+                    <!--------------5th----->
+         <div class="swiper-slide">
+            <div class="single_crouse">
+               <div class="inner">
+                  <div class="thumbnail">
+                     <img src="assets/images/crouse/course-04.jpg" alt="">
+                     <div class="wish"><ion-icon name="heart"></ion-icon></div>
+                     <div class="crouse_name">Designing Learning</div>
+                  </div>
+                  <div class="content">
+                     <div class="card_top">
+                        <div class="author-meta">
+                           <div class="author-thumb">
+                               <a href="#">
+                                   <img src="assets/images/instractor/instructor-6.jpg" alt="Author Images">
+                                   <span class="author-title">Nancy Phipps</span>
+                               </a>
+                           </div>
+                       </div>
+                       <ul class="edu-meta meta-02">
+                        <li><ion-icon name="clipboard"></ion-icon><span>16 Lessons</span></li>
+                    </ul>
+                     </div>
+                     <h5 class="card_title"><a href="#">Java Programming Masterclass for Software Developers</a></h5>
+                     <hr class="hr">
+                     <div class="card-bottom">
+                        <div class="price-list price-style-02">
+                            <div class="price current-price">$89.99</div>
+                            <div class="price old-price">$99.99</div>
+                        </div>
+                        <div class="edu-rating rating-default">
+                            <div class="rating">
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                              <ion-icon name="star"></ion-icon>
+                            </div>
+                            <span class="rating-count">(12)</span>
+                        </div>
+                    </div>
+                  </div>
+                  </div>
+                  <div class="content_hover_action">
+                     <div class="hover_content">
+                        <div class="content_top">
+                           <div class="wish"><ion-icon name="heart"></ion-icon></div>
+                           <div class="crouse_name_2">Language Learning</div>
+                        </div>
+                        <h6 class="card_hover_title"><a href="#">Java Programming Masterclass for Software Developers</a></h6>
+                        <p class="description">There are many variations of passages of Lorem Ipsaums available, but the majority have suffered alteration. generators on the Internet tend to repeat</p>
+                        <a href="" class="btn_2 mt-3">Enroll Now</a>
+                        <div class="card-bottom mt-3">
+                           <div class="price-list price-style-02">
+                               <div class="price current-price">$89.99</div>
+                               <div class="price old-price">$99.99</div>
+                           </div>
+                           <div class="edu-rating rating-default">
+                               <div class="rating">
+                                 <ion-icon name="star"></ion-icon>
+                                 <ion-icon name="star"></ion-icon>
+                                 <ion-icon name="star"></ion-icon>
+                                 <ion-icon name="star"></ion-icon>
+                               </div>
+                               <span class="rating-count">(12)</span>
+                           </div>
+                       </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+        </div>
+        </div>    
+      <div class="swiper-pagination"></div>
+
+         </div>
+    </div>
+      </section>
+
+      <!--------------------other section---------------->
+
+      <section class="others">
+                  <div class="video_box">
+                     <div class="video_overlay">
+                        <div class="overlay_text">
+                           <h3>Start for Class</h3>
+                           <p>Get unlimited access to 5,500+ of our top courses for your team</p>
+                           <a href="" class="btn_2 mt-3"data-bs-toggle="modal" data-bs-target="#exampleModal">Register Now</a>
+                        </div>
+                     </div>
+                     <video  controls="true" autoplay="autoplay" loop="true">
+                        <source src="assets/video/production ID_3969453.mp4" type="video/mp4">
+                        Sorry, your browser doesn't support embedded videos.
+                      </video>
+                  </div>
+      </section>
+
+
+      <!-------------------------------instarctor----------------------->
+
+      <section class="instractor common_sec_title" id="instractor"data-aos="zoom-in">
+         <div class="section__title text-center">
+            <h2>Our Expert Instructors<span><img src="assets/images/yellow-bg-2.png" alt="" class="img-fluid"></span></span></h2>
+            <h4>There are many variations of passages of Lorem Ipsum available</h4> 
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-lg-3 col-md-6">
+                  <div class="single_teacher">
+                     <div class="teacher_thumbnail">
+                        <img src="assets/images/instractor/team12.jpg" alt="" class="img-fluid">
+                     </div>
+                     <div class="intractor_description">
+                        <div class="details">
+                           <h2 class="ins_name">John Kowalski</h2>
+                           <p class="designation"> Co-founder of company</p>
+                        </div>
+                        <ul class="social_handle text-center">
+                           <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                           <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                           <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                           <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="single_teacher active">
+                     <div class="teacher_thumbnail">
+                        <img src="assets/images/instractor/team11.jpg" alt="" class="img-fluid">
+                     </div>
+                     <div class="intractor_description">
+                        <div class="details">
+                           <h2 class="ins_name">John Kowalski</h2>
+                           <p class="designation"> Co-founder of company</p>
+                        </div>
+                        <ul class="social_handle text-center">
+                           <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                           <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                           <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                           <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="single_teacher">
+                     <div class="teacher_thumbnail">
+                        <img src="assets/images/instractor/team13.jpg" alt="" class="img-fluid">
+                     </div>
+                     <div class="intractor_description">
+                        <div class="details">
+                           <h2 class="ins_name">John Kowalski</h2>
+                           <p class="designation"> Co-founder of company</p>
+                        </div>
+                        <ul class="social_handle text-center">
+                           <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                           <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                           <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                           <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="single_teacher">
+                     <div class="teacher_thumbnail">
+                        <img src="assets/images/instractor/team14.jpg" alt="" class="img-fluid">
+                     </div>
+                     <div class="intractor_description">
+                        <div class="details">
+                           <h2 class="ins_name">John Kowalski</h2>
+                           <p class="designation"> Co-founder of company</p>
+                        </div>
+                        <ul class="social_handle text-center">
+                           <li><a href=""><i class="fab fa-facebook-f"></i></a></li>
+                           <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                           <li><a href=""><i class="fab fa-linkedin-in"></i></a></li>
+                           <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        </ul>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <!---------------------------------------FAQ Section-------------->
+
+      <section class="FAQ common_sec_title" id="FAQ"data-aos="fade-up">
+         <div class="section__title text-center">
+            <h2>Have any question for us? <span><img src="assets/images/yellow-bg-2.png" alt="" class="img-fluid"></span></span></h2>
+            <h4>Mirum est notare quam littera gothica, quam nunc putamus parum</h4> 
+         </div>
+         <div class="container accordian_container">
+            <div class="accordian_toggle">
+               <button class="toggle">
+                   How do I apply the coupon?
+                   <i class="fas fa-plus icon"></i>
+               </button>
+               <div class="content_accordian">
+                   <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores error doloremque, quibusdam qui necessitatibus autem aperiam reprehenderit? Ipsum maiores dolore inventore ea. Accusantium fuga eius laboriosam iusto blanditiis doloremque ullam?</p>
+               </div>
+           </div>
+            <div class="accordian_toggle">
+                <button class="toggle">
+                    How do I apply the coupon?
+                    <i class="fas fa-plus icon"></i>
+                </button>
+                <div class="content_accordian">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores error doloremque, quibusdam qui necessitatibus autem aperiam reprehenderit? Ipsum maiores dolore inventore ea. Accusantium fuga eius laboriosam iusto blanditiis doloremque ullam?</p>
+                </div>
+            </div>
+            <div class="accordian_toggle">
+                <button class="toggle">
+                    How do I become a member?
+                    <i class="fas fa-plus icon"></i>
+                </button>
+                <div class="content_accordian">
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae consectetur officiis labore commodi sunt ex praesentium dolor magnam asperiores reiciendis. Minus magnam nesciunt aliquid eos ipsam sequi recusandae quos incidunt.</p>
+                </div>
+            </div>
+        </div>
+         </section>
+
+
+
+         <!----------------contact------------------->
+<section class="contact" id="contact">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-8 col-md-12">
+            <div class="section__title">
+               <h2>Get Into Touch<span><img src="assets/images/yellow-bg-2.png" alt="" class="img-fluid"></span></span></h2>
+               <p>Have a question or just want to say hi? We'd love to hear from you.</p>
+            </div>
+            <div class="contact_form_area">
+                  <form action="" method="post">
+                     <div class="row">
+                     <div class="col-xxl-6 col-xl-6 col-md-6">
+                        <div class="contact__form-input">
+                           <input type="text" class="form-control input_style" placeholder="Your Name">
+                        </div>
+                     </div>
+                     <div class="col-xxl-6 col-xl-6 col-md-6">
+                        <div class="contact__form-input">
+                           <input type="email" class="form-control input_style" placeholder="Your Email">
+                        </div>
+                     </div>
+                     <div class="col-xxl-12">
+                        <div class="contact__form-input">
+                           <input type="text" class="form-control input_style" placeholder="Subject" name="subject">
+                        </div>
+                     </div>
+                     <div class="col-xxl-12">
+                        <div class="contact__form-input">
+                           <textarea class="form-control textarea_style" placeholder="Enter Your Message" name="message" cols="20" rows="10"></textarea>
+                        </div>
+                     </div>
+                  </div>
+                  <div class="col-xxl-12">
+                     <div class="contact__form-agree  d-flex align-items-center mb-20">
+                        <input class="e-check-input" type="checkbox" id="e-agree">
+                        <label class="e-check-label" for="e-agree">I agree to the<a href="#">Terms & Conditions</a></label>
+                     </div>
+                  </div>
+                  <button type="submit" class="submit_btn mt-5">Summit</button>
+                  </form>
+            </div>
+         </div>
+         <div class="col-lg-4 col-md-12">
+            <div class="contact_information">
+               <ul>
+                  <li>
+                     <div class="contact_info_item">
+                        <div class="contact_icon"><ion-icon name="pin"></ion-icon></div>
+                        <div class="contact_info_text">
+                           <h4>New York Office</h4>
+                           <a href="">Maypole Crescent 70-80 Upper St Norwich NR2 1LT</a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="contact_info_item">
+                        <div class="contact_icon"><ion-icon name="mail"></ion-icon></div>
+                        <div class="contact_info_text">
+                           <h4>Email us directly</h4>
+                           <a href="">support@educal.com</a>
+                             <a href="">info@educal.com</a>
+                        </div>
+                     </div>
+                  </li>
+                  <li>
+                     <div class="contact_info_item">
+                        <div class="contact_icon"><ion-icon name="call"></ion-icon></div>
+                        <div class="contact_info_text">
+                           <h4>Phone</h4>
+                           <a href="tel:+(426)-742-26-44">+(426) 742 26 44</a>
+                           <a href="tel:+(426)-742-26-44">+(426) 742 26 49</a>
+                        </div>
+                     </div>
+                  </li>
+               </ul>
+               <div class="social_media_links">
+                  <h4>Follow Us</h4>
+                  <ul>
+                     <li><a href="" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                     <li><a href="" class="tw"><i class="fab fa-twitter"></i></a></li>
+                     <li><a href="" class="pin"><i class="fab fa-pinterest"></i></a></li>
+                  </ul>
+               </div>
+            </div>
+         </div>
+      </div>
+   </div>
+
+
+
+</section>
+
+
+
+
+       
+         <!------------footer--------------------->
+
+<footer class="footer">
+   <div class="container">
+      <div class="row">
+         <div class="col-lg-3 col-md-6">
+          <div class="foot_item">
+            <h4>About</h4>
+            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+            <div class="social_media_links">
+               <ul>
+                  <li><a href="" class="fb"><i class="fab fa-facebook-f"></i></a></li>
+                  <li><a href="" class="tw"><i class="fab fa-twitter"></i></a></li>
+                  <li><a href="" class="pin"><i class="fab fa-pinterest"></i></a></li>
+               </ul>
+            </div>
+          </div>
+         </div>
+         <div class="col-lg-3 col-md-6">
+            <div class="foot_item">
+              <h4>Useful links</h4>
+             <div class="foot_links">
+               <ul>
+               <li><a href="">About Us</a></li>
+               <li><a href="">Privacy Policy</a></li>
+               <li><a href="">Terms & condition</a></li>
+               <li><a href="">Student Spotlights</a></li>
+               </ul>
+             </div>
+              </div>
+            </div>
+            <div class="col-lg-3 col-md-6">
+               <div class="foot_item">
+                 <h4>Learning</h4>
+                <div class="foot_links">
+                  <ul>
+                  <li><a href="">Business Strategy</a></li>
+                  <li><a href="">Become A Teacher</a></li>
+                  <li><a href="">Project Mangement</a></li>
+                  <li><a href="">Membership</a></li>
+                  </ul>
+                </div>
+                 </div>
+               </div>
+               <div class="col-lg-3 col-md-6">
+                  <div class="foot_item">
+                    <h4>Have a Questions?</h4>
+                   <div class="foot_links">
+                     <ul class="footaddresss">
+                     <li><a href=""><ion-icon name="pin"></ion-icon><span>Maypole Crescent 70-80 Upper St Norwich NR2 1LT
+                        Email us directly</span></a></li>
+                     <li><a href=""><ion-icon name="mail"></ion-icon><Span>support@educal.com</Span></a></li>
+                     <li><a href="tel:+(426)-742-26-44"><ion-icon name="call"></ion-icon><Span>+(426)-742-26-44</Span></a></li>
+                     </ul>
+                   </div>
+                    </div>
+                  </div>
+           </div>
+      </div>
+   </div>
+</footer>
+
+<div class="foot_bottom">
+   <p>Copyright ©2022 All rights reserved</p>
+</div>
+
+
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      <!----------boostrap js-------->
+      <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+      <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+      <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+      <!----------swiper js-->
+      <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+      <!----------------------custom js-->
+      <script src="assets/js/main.js"></script>
+      <script src="assets/js/backToTop.js"></script>
+ 
+      <script>
+         AOS.init({
+           offset: 300,
+           duration: 1000,
+           easing: 'ease-in-out',
+         });
+      </script>
+
+          <script>
+            var swiper = new Swiper(".mySwiper", {
+             slidesPerView: 1,
+        spaceBetween: 10,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        breakpoints: {
+          640: {
+            slidesPerView: 2,
+            spaceBetween: 20,
+          },
+          768: {
+            slidesPerView: 4,
+            spaceBetween: 40,
+          },
+          1024: {
+            slidesPerView: 3,
+            spaceBetween: 50,
+          },
+        },
+      });
+          </script>
+   </body>
+</html>
